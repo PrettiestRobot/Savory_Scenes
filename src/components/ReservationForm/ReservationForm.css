@@ -1,0 +1,278 @@
+* {
+  box-sizing: border-box;
+  font-family: "open-sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: 100%;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Gives the body element a parent height to compare against */
+html {
+  height: 100%;
+}
+
+/* Matches the font of special elements to the rest of the page */
+input,
+select,
+option,
+optgroup,
+textarea,
+button,
+pre,
+code {
+  font-size: 100%;
+  font-family: inherit;
+}
+
+/* Removes default bullet points from lists */
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn-primary {
+  padding: 8px 16px 8px 16px;
+  background-color: #f6c76f;
+  color: black;
+  border-radius: 4px;
+  font-weight: 600;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #f3b43f;
+  color: black;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.padding {
+  padding: 1rem;
+}
+
+.section-title {
+  width: 100%;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.side-padding {
+  padding: 0 64.5px;
+}
+
+@media (max-width: 940px) {
+  .side-padding {
+    padding: 0 1rem;
+  }
+}
+input {
+  padding: 8px;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.form-modal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background-color: rgba(33, 33, 41, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+}
+.form-modal.show-modal {
+  opacity: 1;
+  pointer-events: all;
+}
+.form-modal .reservation-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: white;
+  padding: 3rem;
+  width: 400px;
+  gap: 1rem;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.form-modal .reservation-form.show-form {
+  animation: overshoot 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+.form-modal .reservation-form .reservation-close-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  padding: 8px;
+  width: 25px;
+  height: 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: #212129;
+  color: #fff;
+}
+.form-modal .reservation-form .input-container {
+  position: relative;
+  width: 100%;
+}
+.form-modal .reservation-form .input-container label {
+  position: absolute;
+  top: -8px;
+  left: 8px;
+  background-color: white;
+  padding: 0 4px;
+  color: #333;
+  font-size: 14px;
+}
+
+.reservation-banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 400px;
+  margin-top: 3rem;
+  z-index: 97;
+}
+.reservation-banner .reservation-banner-image-container {
+  background-color: white;
+  width: 100%;
+  min-width: 450px;
+  height: 100%;
+  flex: 1;
+}
+.reservation-banner .reservation-banner-image-container img {
+  inline-size: 100%;
+  block-size: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.reservation-banner .reservation-banner-message-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 400px;
+  height: 400px;
+  position: relative;
+  color: #fff;
+  padding: 2rem;
+}
+.reservation-banner .reservation-banner-message-container h1 {
+  text-align: center;
+  padding: 1rem 0;
+}
+.reservation-banner .reservation-banner-message-container p {
+  font-size: 1.25rem;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.reservation-banner-message-container::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 100%;
+  background-color: black;
+  left: -50px;
+  -webkit-mask-image: url(images/triangle.svg);
+}
+
+@media (max-width: 820px) {
+  .reservation-banner {
+    flex-direction: column;
+  }
+  .reservation-banner .reservation-banner-message-container {
+    width: 100%;
+  }
+  .reservation-banner .reservation-banner-message-container h1 {
+    text-align: center;
+    padding: 0.25rem 0;
+  }
+  .reservation-banner .reservation-banner-message-container p {
+    font-size: 1.25rem;
+    text-align: center;
+    margin: 0;
+  }
+  .reservation-banner .reservation-banner-message-container::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 35px;
+    background-color: black;
+    top: -35px;
+    left: 0;
+    transform: rotate(0deg);
+    -webkit-mask-image: url(images/triangle_top.svg);
+  }
+}
+@keyframes overshoot {
+  0% {
+    transform: translateY(100%); /* Starting position */
+  }
+  80% {
+    transform: translateY(-10%); /* Overshoot by 10% */
+  }
+  100% {
+    transform: translateY(0%); /* Final position */
+  }
+}/*# sourceMappingURL=ReservationForm.css.map */

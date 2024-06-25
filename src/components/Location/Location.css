@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  font-family: "open-sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: 100%;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Gives the body element a parent height to compare against */
+html {
+  height: 100%;
+}
+
+/* Matches the font of special elements to the rest of the page */
+input,
+select,
+option,
+optgroup,
+textarea,
+button,
+pre,
+code {
+  font-size: 100%;
+  font-family: inherit;
+}
+
+/* Removes default bullet points from lists */
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn-primary {
+  padding: 8px 16px 8px 16px;
+  background-color: #f6c76f;
+  color: black;
+  border-radius: 4px;
+  font-weight: 600;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #f3b43f;
+  color: black;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.padding {
+  padding: 1rem;
+}
+
+.section-title {
+  width: 100%;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.side-padding {
+  padding: 0 64.5px;
+}
+
+@media (max-width: 940px) {
+  .side-padding {
+    padding: 0 1rem;
+  }
+}
+input {
+  padding: 8px;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.location-container {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1920px;
+  height: 480px;
+  gap: 1rem;
+}
+.location-container .location-info {
+  background-color: white;
+  width: 398px;
+  height: 100%;
+  padding: 1rem;
+}/*# sourceMappingURL=Location.css.map */

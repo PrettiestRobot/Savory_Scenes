@@ -1,0 +1,103 @@
+{
+  "sandwiches": [
+    {
+      "name": "Classic Reuben",
+      "image": "/images/menu_items/classic_reuben.png",
+      "price": 9.99,
+      "description": "A mouthwatering combination of corned beef, Swiss cheese, sauerkraut, and thousand island dressing all grilled to perfection"
+    },
+    {
+      "name": "Turkey Club",
+      "image": "/images/menu_items/turkey_club.png",
+      "price": 8.49,
+      "description": "Sliced turkey breast, creamy avocado, crispy bacon, lettuce, and tomato on lightly toasted whole-grain bread."
+    },
+    {
+      "name": "Veggie Delight",
+      "image": "/images/menu_items/veggie_delight.png",
+      "price": 7.99,
+      "description": "A colorful medley of roasted red peppers, cucumber, spinach, red onion, and hummus on a delicious ciabatta roll."
+    },
+    {
+      "name": "Pastrami Melt",
+      "image": "/images/menu_items/pastrami_melt.png",
+      "price": 10.49,
+      "description": "Generous layers of pastrami, melted Swiss cheese, and tangy mustard on rye bread."
+    },
+    {
+      "name": "Caprese Panini",
+      "image": "/images/menu_items/caprese_panini.png",
+      "price": 8.99,
+      "description": "Fresh mozzarella, ripe tomatoes, basil pesto, and balsamic glaze pressed between slices of ciabatta."
+    },
+    {
+      "name": "Egg Salad Croissant",
+      "image": "/images/menu_items/egg_salad_croissant.png",
+      "price": 6.49,
+      "description": "Creamy egg salad with a hint of dijon mustard, served on a buttery croissant."
+    },
+    {
+      "name": "Spicy Italian",
+      "image": "/images/menu_items/spicy_italian.png",
+      "price": 9.49,
+      "description": "A zesty blend of pepperoni, salami, provolone cheese, hot peppers, and Italian dressing on a toasted baguette."
+    },
+    {
+      "name": "Chicken Pesto",
+      "image": "/images/menu_items/chicken_pesto.png",
+      "price": 9.99,
+      "description": "Grilled chicken breast topped with mozzarella, fresh tomatoes, and homemade pesto sauce on focaccia bread."
+    },
+    {
+      "name": "BBQ Pulled Pork",
+      "image": "/images/menu_items/bbq_pulled_pork.png",
+      "price": 10.99,
+      "description": "Slow-cooked pulled pork smothered in BBQ sauce, topped with coleslaw on a soft brioche bun."
+    }
+  ],
+
+  "sides": [
+    {
+      "name": "French Fries",
+      "image": "/images/menu_items/crispy_french_fries.png",
+      "price": 4.99,
+      "description": "Golden and perfectly seasoned, our fries are the ultimate comfort food. Dip them in ketchup or your favorite sauce for an extra kick."
+    },
+    {
+      "name": "Onion Rings",
+      "image": "/images/menu_items/onionrings.png",
+      "price": 6.49,
+      "description": "Thick-cut onions coated in a crispy batter, fried to perfection. These rings are both crunchy and flavorful."
+    },
+    {
+      "name": "Side Salad",
+      "image": "/images/menu_items/side_salad.png",
+      "price": 5.49,
+      "description": "A refreshing mix of greens, cherry tomatoes, cucumber, and your choice of dressing. Light and healthy!"
+    },
+    {
+      "name": "Blooming Onion",
+      "image": "/images/menu_items/blooming_onion.png",
+      "price": 8.99,
+      "description": "Our blooming onion is a whole onion sliced and battered, then deep-fried until it blooms into a crispy, flavorful treat. Served with a zesty sauce."
+    },
+    {
+      "name": "Sweet Potato Fries",
+      "image": "/images/menu_items/sweet_potato_fries.png",
+      "price": 5.99,
+      "description": "Crispy sweet potato fries seasoned with a touch of cinnamon and sugar, served with a side of honey mustard dipping sauce."
+    },
+    {
+      "name": "Mac & Cheese Bites",
+      "image": "/images/menu_items/mac_cheese_bites.png",
+      "price": 7.49,
+      "description": "Bite-sized morsels of creamy macaroni and cheese, coated in breadcrumbs and fried to a golden brown."
+    },
+    {
+      "name": "Pickle Spears",
+      "image": "/images/menu_items/pickle_spears.png",
+      "price": 3.99,
+      "description": "Dill pickle spears coated in a light batter and fried until crispy. A tangy and crunchy delight."
+    }
+  ]
+}

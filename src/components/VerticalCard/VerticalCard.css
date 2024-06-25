@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+  font-family: "open-sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: 100%;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Gives the body element a parent height to compare against */
+html {
+  height: 100%;
+}
+
+/* Matches the font of special elements to the rest of the page */
+input,
+select,
+option,
+optgroup,
+textarea,
+button,
+pre,
+code {
+  font-size: 100%;
+  font-family: inherit;
+}
+
+/* Removes default bullet points from lists */
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn-primary {
+  padding: 8px 16px 8px 16px;
+  background-color: #f6c76f;
+  color: black;
+  border-radius: 4px;
+  font-weight: 600;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #f3b43f;
+  color: black;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.padding {
+  padding: 1rem;
+}
+
+.section-title {
+  width: 100%;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.side-padding {
+  padding: 0 64.5px;
+}
+
+@media (max-width: 940px) {
+  .side-padding {
+    padding: 0 1rem;
+  }
+}
+input {
+  padding: 8px;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.vertical-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: white;
+  scroll-snap-align: start;
+  transition: transform 0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.vertical-card .price-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  transform: rotate(45deg);
+  width: 75px;
+  height: 75px;
+}
+.vertical-card .price-container .item-price {
+  background-color: rgba(255, 0, 0, 0.674);
+  color: #fff;
+  padding: 4px 200px;
+  text-align: center;
+  transform: translateX(100%);
+  transition: transform 0.4s ease;
+  font-weight: 700;
+}
+.vertical-card .vertical-card-img-container {
+  overflow: hidden;
+  inline-size: 100%;
+  aspect-ratio: 1/1;
+}
+.vertical-card .vertical-card-img-container img {
+  inline-size: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.2s ease;
+}
+.vertical-card .vertical-card-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 16px;
+}
+.vertical-card .vertical-card-content h4 {
+  margin-bottom: 16px;
+  color: #333;
+}
+.vertical-card .vertical-card-content p {
+  margin: 0;
+  line-height: 26px;
+}
+.vertical-card:hover .vertical-card-img-container img {
+  transform: scale(1.1);
+  transition: transform 5s ease;
+}
+.vertical-card:hover .price-container .item-price {
+  transform: translateX(0);
+}/*# sourceMappingURL=VerticalCard.css.map */
