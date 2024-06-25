@@ -1,0 +1,18 @@
+@import "../../assets/styles/_Variables";
+@import "../../assets/styles/_Mixins";
+@import "../../assets/styles/_Global";
+
+.location-container {
+  margin-top: 3rem;
+  @include center-flexbox(row);
+  width: 100%;
+  max-width: 1920px;
+  height: 480px;
+  gap: 1rem;
+  .location-info {
+    background-color: white;
+    width: 398px;
+    height: 100%;
+    padding: 1rem;
+  }
+}

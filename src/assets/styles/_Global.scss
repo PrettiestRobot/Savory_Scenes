@@ -1,0 +1,111 @@
+@import "./_Variables";
+@import "./_Mixins";
+
+* {
+  box-sizing: border-box;
+  font-family: "open-sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: 100%;
+}
+
+h1 {
+  font-size: $h1;
+}
+h2 {
+  font-size: $h2;
+}
+h3 {
+  font-size: $h3;
+}
+h4 {
+  font-size: $h4;
+}
+h5 {
+  font-size: $h5;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Gives the body element a parent height to compare against */
+html {
+  height: 100%;
+}
+
+/* Matches the font of special elements to the rest of the page */
+input,
+select,
+option,
+optgroup,
+textarea,
+button,
+pre,
+code {
+  font-size: 100%;
+  font-family: inherit;
+}
+
+/* Removes default bullet points from lists */
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn-primary {
+  padding: 8px 16px 8px 16px;
+  background-color: $primary-btn;
+  color: black;
+  border-radius: 4px;
+  font-weight: 600;
+  border: none;
+  &:hover {
+    background-color: darken($primary-btn, 10%);
+    color: black;
+  }
+}
+
+.flex-column {
+  @include center-flexbox(column);
+}
+
+.padding {
+  padding: 1rem;
+}
+
+.section-title {
+  width: 100%;
+  color: $text-light;
+  margin-bottom: 1rem;
+}
+
+.side-padding {
+  padding: 0 64.5px;
+}
+
+@media (max-width: 940px) {
+  .side-padding {
+    padding: 0 1rem;
+  }
+}
+
+input {
+  padding: 8px;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 1rem;
+}

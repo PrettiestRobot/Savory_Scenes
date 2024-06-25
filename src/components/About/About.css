@@ -1,0 +1,238 @@
+* {
+  box-sizing: border-box;
+  font-family: "open-sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: 100%;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Gives the body element a parent height to compare against */
+html {
+  height: 100%;
+}
+
+/* Matches the font of special elements to the rest of the page */
+input,
+select,
+option,
+optgroup,
+textarea,
+button,
+pre,
+code {
+  font-size: 100%;
+  font-family: inherit;
+}
+
+/* Removes default bullet points from lists */
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn-primary {
+  padding: 8px 16px 8px 16px;
+  background-color: #f6c76f;
+  color: black;
+  border-radius: 4px;
+  font-weight: 600;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #f3b43f;
+  color: black;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.padding {
+  padding: 1rem;
+}
+
+.section-title {
+  width: 100%;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.side-padding {
+  padding: 0 64.5px;
+}
+
+@media (max-width: 940px) {
+  .side-padding {
+    padding: 0 1rem;
+  }
+}
+input {
+  padding: 8px;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.about-container .about {
+  display: grid;
+  overflow-x: auto;
+  grid-auto-flow: column;
+  gap: 1rem;
+  max-width: 1328px;
+}
+
+.about-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  scroll-snap-align: start;
+  transition: transform 0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.about-card .about-card-title {
+  background-color: white;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+.about-card .about-card-img-container {
+  overflow: hidden;
+  inline-size: 100%;
+  aspect-ratio: 1/1;
+}
+.about-card .about-card-img-container img {
+  inline-size: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.3s ease;
+}
+.about-card .about-card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%);
+  background-color: rgba(255, 255, 255, 0.75);
+  opacity: 0;
+  z-index: 3;
+  transition: 0.3s ease;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+}
+.about-card .about-card-title {
+  padding: 0.5rem;
+  text-align: center;
+}
+.about-card:hover {
+  cursor: pointer;
+}
+.about-card:hover .about-card-img-container img {
+  transform: scale(1.1);
+}
+.about-card:hover .about-card-content {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+@media (max-width: 940px) {
+  .about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+}
+@media (max-width: 596px) {
+  .about {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    width: 100%;
+  }
+  .about .about-card {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 33vw;
+    grid-template-rows: 40px 1fr;
+    height: 33vw;
+  }
+  .about .about-card .about-card-title {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .about .about-card .about-card-img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    width: 33vw;
+  }
+  .about .about-card .about-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    opacity: 1;
+    transform: translateY(0%);
+    height: 100%;
+    width: 100%;
+    background-color: WHITE;
+    padding: 0 0.5rem;
+  }
+}/*# sourceMappingURL=About.css.map */

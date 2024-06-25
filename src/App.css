@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+  font-family: "open-sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: 100%;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Gives the body element a parent height to compare against */
+html {
+  height: 100%;
+}
+
+/* Matches the font of special elements to the rest of the page */
+input,
+select,
+option,
+optgroup,
+textarea,
+button,
+pre,
+code {
+  font-size: 100%;
+  font-family: inherit;
+}
+
+/* Removes default bullet points from lists */
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn-primary {
+  padding: 8px 16px 8px 16px;
+  background-color: #f6c76f;
+  color: black;
+  border-radius: 4px;
+  font-weight: 600;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #f3b43f;
+  color: black;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.padding {
+  padding: 1rem;
+}
+
+.section-title {
+  width: 100%;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.side-padding {
+  padding: 0 64.5px;
+}
+
+@media (max-width: 940px) {
+  .side-padding {
+    padding: 0 1rem;
+  }
+}
+input {
+  padding: 8px;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #212129;
+  padding: 0 1rem 3rem 1rem;
+  position: relative;
+  overflow: hidden;
+}
+.section .section-content {
+  max-width: 1457px;
+  width: 100%;
+}
+.section .section-1-img {
+  position: absolute;
+  display: flex;
+  bottom: -14px;
+  left: -84px;
+  opacity: 0.1;
+  z-index: 1;
+}
+.section .section-1-img img {
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section .section-2-img {
+  position: absolute;
+  top: 72px;
+  right: -48px;
+  transform: rotate(45deg);
+}
+.section .section-2-img img {
+  height: 182px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.sandwich-section,
+.reservation-section {
+  background-image: url("/images/section-bg.png");
+  background-position: center;
+}
+
+.sides-section {
+  background-image: url("/images/jon-moore-5fIoyoKlz7A-unsplash.png");
+  background-position: center;
+}/*# sourceMappingURL=App.css.map */

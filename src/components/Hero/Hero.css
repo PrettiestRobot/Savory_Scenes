@@ -1,0 +1,241 @@
+* {
+  box-sizing: border-box;
+  font-family: "open-sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: 100%;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Gives the body element a parent height to compare against */
+html {
+  height: 100%;
+}
+
+/* Matches the font of special elements to the rest of the page */
+input,
+select,
+option,
+optgroup,
+textarea,
+button,
+pre,
+code {
+  font-size: 100%;
+  font-family: inherit;
+}
+
+/* Removes default bullet points from lists */
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn-primary {
+  padding: 8px 16px 8px 16px;
+  background-color: #f6c76f;
+  color: black;
+  border-radius: 4px;
+  font-weight: 600;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #f3b43f;
+  color: black;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.padding {
+  padding: 1rem;
+}
+
+.section-title {
+  width: 100%;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.side-padding {
+  padding: 0 64.5px;
+}
+
+@media (max-width: 940px) {
+  .side-padding {
+    padding: 0 1rem;
+  }
+}
+input {
+  padding: 8px;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.hero-container {
+  width: 100%;
+  max-height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 56px;
+  position: relative;
+  overflow: hidden;
+}
+.hero-container .hero-text-container-1,
+.hero-container .hero-text-container-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+.hero-container .bg-image {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+
+.hero-text-container-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  animation: containerFadeOut 6s;
+  opacity: 0;
+}
+
+.hero-text-container-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  animation: containerFadeOut 6s;
+  animation-delay: 6s;
+  opacity: 0;
+}
+
+.hero-text {
+  color: #fff;
+  opacity: 0;
+  animation: slideInFadeOut 2.5s cubic-bezier(0.4, -0.06, 0.19, 1.67) forwards;
+  font-size: 3.5rem;
+}
+.hero-text.animation-fire-2 {
+  animation-delay: 0.5s;
+}
+.hero-text.animation-fire-3 {
+  animation-delay: 1s;
+}
+
+.hero-text-2 {
+  color: #fff;
+  opacity: 0;
+  animation: slideInFadeOut2 4s cubic-bezier(0.4, -0.06, 0.19, 1.67) forwards;
+  font-size: 3.5rem;
+}
+.hero-text-2.animation-fire-4 {
+  animation-delay: 6s;
+}
+.hero-text-2.animation-fire-5 {
+  animation-delay: 6.5s;
+}
+.hero-text-2.animation-fire-6 {
+  animation-delay: 7s;
+}
+
+@media (max-width: 940px) {
+  .hero-container {
+    height: 50vh;
+  }
+  .hero-container .bg-image {
+    width: auto;
+    height: 100%;
+  }
+}
+@keyframes slideInFadeOut {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  25% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@keyframes slideInFadeOut2 {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  25% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@keyframes containerFadeOut {
+  0% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}/*# sourceMappingURL=Hero.css.map */

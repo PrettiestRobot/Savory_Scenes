@@ -1,0 +1,75 @@
+@import "../../assets/styles/_Variables";
+@import "../../assets/styles/_Mixins";
+@import "../../assets/styles/_Global";
+
+.vertical-card {
+  @include center-flexbox(column);
+  position: relative;
+  border-radius: $border-radius;
+  overflow: hidden;
+  background-color: white;
+  scroll-snap-align: start;
+  transition: transform 0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  .price-container {
+    @include center-flexbox(row);
+    position: absolute;
+
+    z-index: 1;
+    top: 0;
+    right: 0;
+    transform: rotate(45deg);
+    width: 75px;
+    height: 75px;
+    .item-price {
+      background-color: rgba(255, 0, 0, 0.674);
+      color: $text-light;
+      padding: 4px 200px;
+      text-align: center;
+      transform: translateX(100%);
+      transition: transform 0.4s ease;
+      font-weight: 700;
+    }
+  }
+
+  .vertical-card-img-container {
+    overflow: hidden;
+    inline-size: 100%;
+    aspect-ratio: 1/1;
+    img {
+      inline-size: 100%;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      transition: transform 0.2s ease;
+    }
+  }
+  .vertical-card-content {
+    display: flex;
+    flex-direction: column;
+
+    flex-grow: 1;
+
+    padding: 16px;
+    h4 {
+      margin-bottom: 16px;
+      color: $text-dark;
+    }
+    p {
+      margin: 0;
+      line-height: 26px;
+    }
+  }
+  &:hover {
+    .vertical-card-img-container {
+      img {
+        transform: scale(1.1);
+        transition: transform 5s ease;
+      }
+    }
+    .price-container {
+      .item-price {
+        transform: translateX(0);
+      }
+    }
+  }
+}
